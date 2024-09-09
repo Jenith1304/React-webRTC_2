@@ -1,0 +1,4 @@
+{"email":"user1@gmail.com","message":"Hello\n"}
+{"email":"user2@gmail.com","message":"Hi\n"}
+{"email":"user1@gmail.com","message":"Hey\n"}
+{"email":"user1@gmail.com","message":"How are YOu?\n"}

@@ -1,0 +1,131 @@
+:root {
+    --loginbtn: #1967D2;
+    --loginbtnHover: #000000;
+    --background: #F5F5F5;
+    --shadow: rgba(0, 0, 0, 0.2);
+}
+
+body {
+    background-color: var(--background);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.loginContainer {
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    border: 1px solid var(--loginbtn);
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px var(--shadow);
+    margin: auto;
+    padding: 20px;
+}
+
+.blueStrip {
+    height: 8px;
+    width: 100%;
+    background-color: var(--loginbtn);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.loginHeading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.loginHeading h1 {
+    font-size: 24px;
+    margin: 0;
+    color: var(--loginbtn);
+}
+
+.loginHeading p {
+    font-size: 16px;
+    color: #333333;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.formLogin form input,
+.formLogin form select,
+.formLogin form button {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #cccccc;
+    padding: 12px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.formLogin form input {
+    height: 50px;
+}
+
+.formLogin form select {
+    height: 45px;
+}
+
+.formLogin form button {
+    background-color: var(--loginbtn);
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formLogin form button:hover {
+    background-color: var(--loginbtnHover);
+}
+
+.loginWith {
+    background-color: #EFEFEF;
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.loginWith button {
+    color: var(--loginbtn);
+    border: 1px solid var(--loginbtn);
+    padding: 10px;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .loginContainer {
+        width: 90%;
+    }
+
+    .formLogin form input,
+    .formLogin form select,
+    .formLogin form button {
+        padding: 10px;
+    }
+
+    .formLogin form button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .loginContainer {
+        width: 95%;
+    }
+
+    .formLogin form input,
+    .formLogin form select,
+    .formLogin form button {
+        padding: 8px;
+    }
+
+    .formLogin form button {
+        font-size: 14px;
+    }
+}
